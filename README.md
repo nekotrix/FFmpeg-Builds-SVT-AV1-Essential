@@ -1,6 +1,6 @@
-# FFmpeg Static Auto-Builds
+# FFmpeg Static Auto-Builds (Fork with SVT-AV1-Essential) 
 
-Static Windows (x86_64) and Linux (x86_64) Builds of ffmpeg master and latest release branch.
+Static Windows (x86_64) and Linux (x86_64) Builds of ffmpeg master and latest release branch, featuring SVT-AV1-Essential.
 
 Windows builds are targetting Windows 7 and newer, provided UCRT is installed.
 The minimum supported version is Windows 10 22H2, no guarantees on anything older.
@@ -11,7 +11,7 @@ Linux builds are targetting RHEL/CentOS 8 (glibc-2.28 + linux-4.18) and anything
 
 Builds run daily at 12:00 UTC (or GitHubs idea of that time) and are automatically released on success.
 
-**Auto-Builds run ONLY for win64 and linux(arm)64. There are no win32/x86 auto-builds, though you can produce win32 builds yourself following the instructions below.**
+**Auto-Builds run ONLY for win64 and linux64. There are no win32/x86 auto-builds, though you can produce win32 builds yourself following the instructions below.**
 
 ### Release Retention Policy
 

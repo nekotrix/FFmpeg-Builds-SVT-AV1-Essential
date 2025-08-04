@@ -1,7 +1,8 @@
 #!/bin/bash
 
-SCRIPT_REPO="https://gitlab.com/AOMediaCodec/SVT-AV1.git"
-SCRIPT_COMMIT="d37b1a571dc9af5d553f5fd3cbf8c536cdb21e98"
+SCRIPT_REPO="https://github.com/nekotrix/SVT-AV1-Essential.git"
+SCRIPT_COMMIT="0d3bca9cec9fcb662edd3eb32442cdfbe557fc15"
+SCRIPT_BRANCH="Essential-v3.1.0"
 
 ffbuild_enabled() {
     [[ $TARGET == win32 ]] && return -1
