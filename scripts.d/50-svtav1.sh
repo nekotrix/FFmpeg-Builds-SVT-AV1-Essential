@@ -1,8 +1,8 @@
 #!/bin/bash
 
 SCRIPT_REPO="https://github.com/nekotrix/SVT-AV1-Essential.git"
-SCRIPT_COMMIT="0d3bca9cec9fcb662edd3eb32442cdfbe557fc15"
-SCRIPT_BRANCH="Essential-v3.1.0"
+SCRIPT_COMMIT="e9d30d710497a6757180cc3ae64d32550a298305"
+SCRIPT_BRANCH="Essential-v3.1.2"
 
 ffbuild_enabled() {
     [[ $TARGET == win32 ]] && return -1
