@@ -7,6 +7,8 @@ The minimum supported version is Windows 10 22H2, no guarantees on anything olde
 
 Linux builds are targetting RHEL/CentOS 8 (glibc-2.28 + linux-4.18) and anything more recent.
 
+**As SVT-AV1-Essential only supports 10-bit encoding, you may have to provide `-pix_fmt yuv420p10le` to your FFmpeg commands.**
+
 ## Auto-Builds
 
 Builds run daily at 12:00 UTC (or GitHubs idea of that time) and are automatically released on success.
