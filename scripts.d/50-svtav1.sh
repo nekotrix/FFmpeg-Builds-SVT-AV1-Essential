@@ -1,7 +1,8 @@
 #!/bin/bash
 
-SCRIPT_REPO="https://github.com/AOMediaCodec/SVT-AV1.git"
-SCRIPT_COMMIT="5fdf6b2f373bd96256bb6b45f892077b1b4431d9"
+SCRIPT_REPO="https://github.com/nekotrix/SVT-AV1-Essential.git"
+SCRIPT_COMMIT="9f7ebdc5ffbe3c135b223dd618d5155b43427703"
+SCRIPT_BRANCH="Essential-v4.3.1"
 
 ffbuild_enabled() {
     [[ $TARGET == win32 ]] && return -1
@@ -17,7 +18,7 @@ ffbuild_dockerbuild() {
     mkdir build && cd build
 
     cmake -DCMAKE_TOOLCHAIN_FILE="$FFBUILD_CMAKE_TOOLCHAIN" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$FFBUILD_PREFIX" \
-        -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTING=OFF -DBUILD_APPS=OFF -DSVT_AV1_LTO=OFF ..
+        -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTING=OFF -DBUILD_APPS=OFF -DBUILD_TOOLS=OFF -DSVT_AV1_LTO=OFF ..
     make -j$(nproc)
     make install DESTDIR="$FFBUILD_DESTDIR"
 }
